@@ -15,7 +15,7 @@ $('.cargando').show();
 		},
 		"columns":[
 			{"data":"id"},
-			{"data":"numero_pedido"},
+			{"data":"numero_pedido",render: $.fn.dataTable.render.number( ',', '.', 3, '#pedido ' )},
 			{"data":"fecha"},
 			{"data":"cliente"},
 			{"defaultContent":"<button type='button' class='editar btn btn-primary'><i class='fa fa-edit'></i></button>"},
