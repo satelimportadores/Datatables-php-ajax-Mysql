@@ -9,6 +9,8 @@ var listar = function(){
 $('.cargando').show();
 	var table = $('#pedidos').DataTable({
 		"destroy":true,
+		"pageLength": 40,
+		"lengthMenu": [[40, 80, 100, -1], [40, 80, 100, "All"]],
 		"ajax":{
 			"method":"POST",
 			"url": "php/consulta_pedidos.php"
